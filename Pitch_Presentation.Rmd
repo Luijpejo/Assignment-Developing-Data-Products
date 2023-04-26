@@ -1,0 +1,55 @@
+---
+title: "Assignment week 4 Developing Data Products"
+author: "Joost Luijpers"
+date: "2023-04-26"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## The assignment
+
+This presentation is a product in the context of the final assignment of the Course "Developing Data Products" from the Data Scientist specialization of the John Hopkins University.  
+  
+This peer assessed assignment has two parts.  
+First, I have created a Shiny application and deployed it on Rstudio's servers.  
+Second, I have prepared a reproducible pitch presentation about my application.
+
+This document is the second part of the assignment.
+
+## My application
+My application is a BMI-calculator.  
+BMI stands for "Body Mass Indicator".  
+The BMI shows the relationship between somebody's weight and somebody's length.   
+The weight (in kilograms) is divided by the square of the length (in meters):  
+- A BMI between 18.5 and 24.9 is considered healthy.   
+- Below 18.5 is seen as underweighted.   
+- A BMI of 25 and above is considered from overweighted (<30), via obese (<40) to morbide obese (>= 40).  
+  
+By giving in a weight and a length, using two sliders, the app will return the BMI-value and an indication of whether that value is healthy or not.
+
+## Percentage of overweight
+
+```{r message = FALSE, warning=FALSE}
+library(ggplot2)
+library(xlsx)
+library(dplyr)
+
+df <- read.xlsx("./Lengte_en_gewicht_van_personen__ondergewicht_en_overgewicht__vanaf_1981.xlsx", 1, header = TRUE)
+
+ggplot(df, aes(x=Jaar, y = Overgewicht)) +
+  geom_line(color= "blue", size = 1) + 
+  ylab ("Percentage overweight") + 
+  xlab ("Year")+
+  ggtitle("Percentage Overweight in the Netherlands in the last years")
+```
+
+## Files of the assignment
+The various files of the assignment can be found at the following locations:
+
+- Shiny application:  <https://jolu1965.shinyapps.io/Assignment_week4_Developing_Data_Products/>
+- Github-files:  <https://github.com/Luijpejo/Assignment-Developing-Data-Products>
+
+
