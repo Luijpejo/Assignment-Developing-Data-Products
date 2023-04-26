@@ -17,4 +17,4 @@ I have stored all the files that I have created for this assignment in this repo
     
     
 The Shiny application is also published on Shiny.io: "https://jolu1965.shinyapps.io/Assignment_week4_Developing_Data_Products/".  
-The Presentation is also published on RPubs: "".
+The Presentation is also published on RPubs: "https://rpubs.com/JoLu1965/1034208".
