@@ -16,5 +16,5 @@ I have stored all the files that I have created for this assignment in this repo
     I have used this file in my presentation to create a plot, since the topic of my application is the Body Mass Index (BMI). I have modified the file to enable the creation of the plot.
     
     
-The Shiny application is also published on Shiny.io: "https://jolu1965.shinyapps.io/Assignment_week4_Developing_Data_Products/"
+The Shiny application is also published on Shiny.io: "https://jolu1965.shinyapps.io/Assignment_week4_Developing_Data_Products/".  
 The Presentation is also published on RPubs: "".
